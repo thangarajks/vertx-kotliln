@@ -10,14 +10,43 @@
 
     <properties>
         <kotlin.version>1.7.0</kotlin.version>
+        <vertx.version>4.3.2</vertx.version>
+        <log4j.version>2.18.0</log4j.version>
     </properties>
 
     <dependencies>
+        <!-- Kotlin's language Support-->
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib-jdk8</artifactId>
             <version>${kotlin.version}</version>
         </dependency>
+        <!-- Vertx Dependencies -->
+        <!-- Adds Web application related supports like Routes -->
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-web</artifactId>
+            <version>${vertx.version}</version>
+        </dependency>
+        <!-- Adds kotlin Coroutines support on top of vertx while using kotlin. eg: CoroutineVerticle -->
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-lang-kotlin-coroutines</artifactId>
+            <version>${vertx.version}</version>
+        </dependency>
+        <!-- Logger Dependencies to capture logs -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+
+        <!-- TEST DEPENDENCIES -->
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-test</artifactId>
