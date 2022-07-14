@@ -34,6 +34,12 @@
             <artifactId>vertx-lang-kotlin-coroutines</artifactId>
             <version>${vertx.version}</version>
         </dependency>
+        <!-- JWT Auth Dependencies-->
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-auth-jwt</artifactId>
+            <version>${vertx.version}</version>
+        </dependency>
         <!-- Logger Dependencies to capture logs -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
